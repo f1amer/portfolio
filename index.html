@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Shishir Bhattarai — IT Support Technician Portfolio (Bootstrap + jQuery)" />
+  <title>Shishir Bhattarai | Personal Portfolio</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- AOS (scroll animations) -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body class="theme-dark" data-bs-spy="scroll" data-bs-target="#nav" data-bs-smooth-scroll="true" tabindex="0">
+
+  <!-- Top progress bar -->
+  <div id="scrollProgress"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top blur-nav">
+    <div class="container">
+      <a class="navbar-brand fw-semibold d-flex align-items-center gap-2" href="#top">
+        <span class="brand-dot"></span>
+        <span>Shishir</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav"
+        aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="nav" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#blog">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-2">
+            <button id="themeToggle" class="btn btn-outline-light btn-sm d-flex align-items-center gap-2">
+              <i class="bi bi-moon-stars"></i><span>Theme</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7" data-aos="fade-up">
+          <div class="badge bg-glass mb-3">
+            <i class="bi bi-shield-lock me-2"></i>IT Support • Service Desk • Security-Aware
+          </div>
+
+          <h1 class="display-5 fw-bold lh-sm mb-3">
+            I keep people productive —<br class="d-none d-md-block" />
+            fast troubleshooting, clean systems, happy users.
+          </h1>
+
+          <p class="lead text-muted mb-4">
+            Adelaide, SA • IT Support Technician • Master of Cyber Security (UoA) • RangeForce labs.
+          </p>
+
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-brand btn-lg" href="#projects">
+              <i class="bi bi-rocket-takeoff me-2"></i>View My Work
+            </a>
+            <a class="btn btn-outline-secondary btn-lg" href="assets/docs/Shishir_Bhattarai_IT_Support_Resume.pdf" download>
+              <i class="bi bi-file-earmark-arrow-down me-2"></i>Download Resume
+            </a>
+            <a class="btn btn-outline-secondary btn-lg" href="#contact">
+              <i class="bi bi-chat-dots me-2"></i>Let’s Talk
+            </a>
+          </div>
+
+          <div class="hero-metrics mt-4">
+            <div class="metric">
+              <div class="metric-num">3+ yrs</div>
+              <div class="metric-label">IT Support</div>
+            </div>
+            <div class="metric">
+              <div class="metric-num">100+</div>
+              <div class="metric-label">Mentored Users</div>
+            </div>
+            <div class="metric">
+              <div class="metric-num">RangeForce</div>
+              <div class="metric-label">Security Labs</div>
+            </div>
+          </div>
+
+          <div class="social-row mt-4">
+            <a class="social-link" href="https://linkedin.com/in/shishir-bhattarai-471aa319b/" target="_blank" rel="noreferrer">
+              <i class="bi bi-linkedin"></i><span>LinkedIn</span>
+            </a>
+            <a class="social-link" href="#" id="githubLink" target="_blank" rel="noreferrer">
+              <i class="bi bi-github"></i><span>GitHub</span>
+            </a>
+            <a class="social-link" href="mailto:shishirbhattarai033@gmail.com">
+              <i class="bi bi-envelope"></i><span>Email</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-5" data-aos="fade-left">
+          <div class="profile-card">
+            <div class="profile-top">
+              <div class="avatar">
+                <img src="assets/img/avatar.png" alt="Shishir Bhattarai" />
+              </div>
+              <div class="profile-meta">
+                <div class="profile-name">Shishir Bhattarai</div>
+                <div class="profile-role">IT Support Technician</div>
+                <div class="profile-loc"><i class="bi bi-geo-alt me-1"></i>Adelaide, SA</div>
+              </div>
+            </div>
+
+            <div class="profile-badges">
+              <span class="pill"><i class="bi bi-windows me-1"></i>Windows</span>
+              <span class="pill"><i class="bi bi-ubuntu me-1"></i>Linux</span>
+              <span class="pill"><i class="bi bi-router me-1"></i>Networking</span>
+              <span class="pill"><i class="bi bi-shield-check me-1"></i>Security</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="profile-actions d-grid gap-2">
+              <a class="btn btn-brand" href="#contact">
+                <i class="bi bi-lightning-charge me-2"></i>Available for IT Support Roles
+              </a>
+              <button class="btn btn-outline-secondary" id="copyEmailBtn">
+                <i class="bi bi-clipboard me-2"></i>Copy Email
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="scroll-indicator" href="#about" aria-label="Scroll to About">
+      <i class="bi bi-chevron-double-down"></i>
+    </a>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="row align-items-center g-4">
+
+        <div class="col-lg-6" data-aos="fade-up">
+          <div class="section-kicker">About</div>
+          <h2 class="section-title">Security-aware support with a customer-first mindset</h2>
+
+          <p class="text-muted">
+            I’m an international student based in Adelaide, currently studying a Master of Cyber Security.
+            I have practical experience helping staff and students in academic settings with common IT issues
+            such as printer faults, network dropouts, slow systems, and account access.
+          </p>
+
+          <p class="text-muted">
+            I focus on calm communication, structured troubleshooting, and documenting fixes so problems don’t repeat.
+            I’m also building strong security habits through hands-on labs (RangeForce) and ongoing study.
+          </p>
+
+          <div class="callout">
+            <div class="callout-icon"><i class="bi bi-check2-circle"></i></div>
+            <div>
+              <div class="fw-semibold">What you get when you hire me</div>
+              <div class="text-muted">
+                Clear and friendly communication, quick issue triage, structured troubleshooting,
+                well-documented solutions, and security-aware support focused on user trust.
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-3 d-flex flex-wrap gap-2">
+            <span class="tag">Service Desk</span>
+            <span class="tag">Remote Support</span>
+            <span class="tag">Windows / Linux</span>
+            <span class="tag">DNS • DHCP • VPN</span>
+            <span class="tag">RangeForce Labs</span>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left">
+
+          <!-- Education Tree -->
+          <div class="tree-panel" data-aos="fade-left">
+            <div class="tree-header">
+              <div class="tree-title"><i class="bi bi-mortarboard me-2"></i>Education</div>
+              <div class="tree-sub text-muted">Learning path</div>
+            </div>
+
+            <div class="career-tree">
+
+              <div class="tree-item">
+                <span class="tree-dot"></span>
+                <div class="tree-content">
+                  <div class="tree-topline">
+                    <div class="tree-year">2025 — Adelaide</div>
+                    <div class="tree-badge">Current</div>
+                  </div>
+                  <div class="tree-main">Master of Cyber Security</div>
+                  <div class="tree-muted">University of Adelaide</div>
+                </div>
+              </div>
+
+              <div class="tree-item">
+                <span class="tree-dot"></span>
+                <div class="tree-content">
+                  <div class="tree-topline">
+                    <div class="tree-year">2017–2021</div>
+
+                    <div class="award-badge">
+                      <i class="bi bi-award-fill"></i>
+                      First Class Honours
+                    </div>
+                  </div>
+
+                  <div class="tree-main">BSc (Hons) Computing</div>
+                  <div class="tree-muted">Leeds Beckett University (UK)</div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Experience Tree -->
+          <div class="tree-panel mt-3 mt-lg-4" data-aos="fade-left">
+            <div class="tree-header">
+              <div class="tree-title"><i class="bi bi-briefcase me-2"></i>Experience</div>
+              <div class="tree-sub text-muted">Career tree</div>
+            </div>
+
+            <div class="career-tree">
+              <div class="tree-item">
+                <span class="tree-dot"></span>
+                <div class="tree-content">
+                  <div class="tree-topline">
+                    <div class="tree-year">2021–Present</div>
+                    <div class="tree-badge">IT Support</div>
+                  </div>
+                  <div class="tree-main">IT Support Technician & Lecturer</div>
+                  <div class="tree-muted">Kathmandu Model College — labs, systems, troubleshooting, mentoring</div>
+                </div>
+              </div>
+
+              <div class="tree-item">
+                <span class="tree-dot"></span>
+                <div class="tree-content">
+                  <div class="tree-topline">
+                    <div class="tree-year">2019–2020</div>
+                    <div class="tree-badge">Dev/QA</div>
+                  </div>
+                  <div class="tree-main">Software Development & QA</div>
+                  <div class="tree-muted">Java/C#/C++ development, testing (JUnit/NUnit), Git workflows</div>
+                </div>
+              </div>
+
+              <div class="tree-item">
+                <span class="tree-dot"></span>
+                <div class="tree-content">
+                  <div class="tree-topline">
+                    <div class="tree-year">2017</div>
+                    <div class="tree-badge">Intern</div>
+                  </div>
+                  <div class="tree-main">IT Support Internship</div>
+                  <div class="tree-muted">NECO Insurance — helpdesk operations, incident logging</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="row align-items-end g-3 mb-4">
+        <div class="col-lg-7" data-aos="fade-up">
+          <div class="section-kicker">Skills</div>
+          <h2 class="section-title">Tools I use to keep systems stable</h2>
+          <p class="text-muted mb-0">Swap the cards to match your real stack. Keep it honest.</p>
+        </div>
+        <div class="col-lg-5 text-lg-end" data-aos="fade-left">
+          <div class="mini-controls d-inline-flex gap-2">
+            <button class="btn btn-outline-secondary btn-sm" data-skill-filter="all">All</button>
+            <button class="btn btn-outline-secondary btn-sm" data-skill-filter="support">Support</button>
+            <button class="btn btn-outline-secondary btn-sm" data-skill-filter="network">Network</button>
+            <button class="btn btn-outline-secondary btn-sm" data-skill-filter="security">Security</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-3" id="skillsGrid">
+        <div class="col-md-6 col-lg-4 skill-item" data-skill="support" data-aos="zoom-in">
+          <div class="glass-card h-100 skill-hover">
+            <div class="card-icon"><i class="bi bi-headset"></i></div>
+            <h3 class="h5 mb-2">Service Desk</h3>
+            <p class="text-muted mb-0">Ticketing, triage, remote support, documentation, user communication.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 skill-item" data-skill="support" data-aos="zoom-in" data-aos-delay="50">
+          <div class="glass-card h-100">
+            <div class="card-icon"><i class="bi bi-pc-display"></i></div>
+            <h3 class="h5 mb-2">OS & Devices</h3>
+            <p class="text-muted mb-0">Windows, macOS, Linux basics — installs, updates, accounts, peripherals.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 skill-item" data-skill="network" data-aos="zoom-in" data-aos-delay="100">
+          <div class="glass-card h-100">
+            <div class="card-icon"><i class="bi bi-router"></i></div>
+            <h3 class="h5 mb-2">Networking</h3>
+            <p class="text-muted mb-0">DNS, DHCP, TCP/IP, VPN — diagnosing connectivity and access issues.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 skill-item" data-skill="security" data-aos="zoom-in">
+          <div class="glass-card h-100">
+            <div class="card-icon"><i class="bi bi-shield-check"></i></div>
+            <h3 class="h5 mb-2">Security Awareness</h3>
+            <p class="text-muted mb-0">Safe tooling, basic hardening, secure habits, phishing awareness.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 skill-item" data-skill="security" data-aos="zoom-in" data-aos-delay="50">
+          <div class="glass-card h-100">
+            <div class="card-icon"><i class="bi bi-activity"></i></div>
+            <h3 class="h5 mb-2">RangeForce Labs</h3>
+            <p class="text-muted mb-0">Hands-on practice with SOC-style tasks, detection & incident workflow basics.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 skill-item" data-skill="support" data-aos="zoom-in" data-aos-delay="100">
+          <div class="glass-card h-100">
+            <div class="card-icon"><i class="bi bi-git"></i></div>
+            <h3 class="h5 mb-2">Tools & Workflow</h3>
+            <p class="text-muted mb-0">Git basics, clean notes, repeatable checklists, structured troubleshooting.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="row align-items-end g-3 mb-4">
+        <div class="col-lg-8" data-aos="fade-up">
+          <div class="section-kicker">Certifications</div>
+          <h2 class="section-title">Credentials that back my hands-on skills</h2>
+          <p class="text-muted mb-0">
+            Practical training and assessments focused on support, security awareness, and technical fundamentals.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="cert-card h-100">
+            <div class="cert-top">
+              <div class="cert-icon"><i class="bi bi-shield-lock"></i></div>
+              <div>
+                <div class="cert-title">RangeForce Cyber Security Labs</div>
+                <div class="cert-org text-muted">RangeForce</div>
+              </div>
+            </div>
+            <div class="cert-desc text-muted">
+              Hands-on SOC-style scenarios: detection basics, incident workflow, and security-aware practices.
+            </div>
+            <div class="cert-tags">
+              <span class="chip">Blue Team</span><span class="chip">IR Basics</span><span class="chip">Labs</span>
+            </div>
+            <div class="cert-actions">
+              <a class="link" href="#" target="_blank" rel="noreferrer"><i class="bi bi-patch-check me-1"></i>Verify</a>
+              <a class="link" href="#projects"><i class="bi bi-box-arrow-up-right me-1"></i>See work</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+          <div class="cert-card h-100">
+            <div class="cert-top">
+              <div class="cert-icon"><i class="bi bi-patch-check"></i></div>
+              <div>
+                <div class="cert-title">HackerRank SQL (Basic)</div>
+                <div class="cert-org text-muted">HackerRank</div>
+              </div>
+            </div>
+            <div class="cert-desc text-muted">
+              Validated SQL fundamentals: joins, aggregation, filtering, and query problem solving.
+            </div>
+            <div class="cert-tags">
+              <span class="chip">SQL</span><span class="chip">Querying</span><span class="chip">Data</span>
+            </div>
+            <div class="cert-actions">
+              <a class="link" href="https://www.hackerrank.com/certificates/c1eb038ff2f8" target="_blank" rel="noreferrer"><i class="bi bi-patch-check me-1"></i>Verify</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="cert-card h-100">
+            <div class="cert-top">
+              <div class="cert-icon"><i class="bi bi-mortarboard"></i></div>
+              <div>
+                <div class="cert-title">Google Digital Marketing</div>
+                <div class="cert-org text-muted">Google</div>
+              </div>
+            </div>
+            <div class="cert-desc text-muted">
+              Digital fundamentals (analytics, campaigns, online presence) — useful for customer support communication and reporting.
+            </div>
+            <div class="cert-tags">
+              <span class="chip">Analytics</span><span class="chip">Communication</span>
+            </div>
+            <div class="cert-actions">
+              <a class="link" href="#" target="_blank" rel="noreferrer"><i class="bi bi-patch-check me-1"></i>Verify</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6" data-aos="fade-up">
+          <div class="cert-card h-100 cert-wide">
+            <div class="cert-top">
+              <div class="cert-icon"><i class="bi bi-tools"></i></div>
+              <div>
+                <div class="cert-title">CompTIA A+ <span class="cert-pill">In Progress</span></div>
+                <div class="cert-org text-muted">CompTIA</div>
+              </div>
+            </div>
+            <div class="cert-desc text-muted">
+              Building stronger foundations in hardware, troubleshooting, operating systems, and IT service best practices.
+            </div>
+            <div class="cert-tags">
+              <span class="chip">Hardware</span><span class="chip">Windows</span><span class="chip">Support</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="50">
+          <div class="cert-card h-100 cert-wide">
+            <div class="cert-top">
+              <div class="cert-icon"><i class="bi bi-journal-code"></i></div>
+              <div>
+                <div class="cert-title">Master of Cyber Security <span class="cert-pill">Ongoing</span></div>
+                <div class="cert-org text-muted">University of Adelaide</div>
+              </div>
+            </div>
+            <div class="cert-desc text-muted">
+              Strengthening security fundamentals, risk awareness, and secure thinking — applied to day-to-day IT support.
+            </div>
+            <div class="cert-tags">
+              <span class="chip">Security</span><span class="chip">Risk</span><span class="chip">Learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="row align-items-end g-3 mb-4">
+        <div class="col-lg-7" data-aos="fade-up">
+          <div class="section-kicker">Work</div>
+          <h2 class="section-title">Projects & case studies</h2>
+          <p class="text-muted mb-0">==========view=========.</p>
+        </div>
+        <div class="col-lg-5 text-lg-end" data-aos="fade-left">
+          <div class="btn-group">
+            <button class="btn btn-outline-secondary btn-sm project-filter active" data-filter="all">All</button>
+            <button class="btn btn-outline-secondary btn-sm project-filter" data-filter="support">Support</button>
+            <button class="btn btn-outline-secondary btn-sm project-filter" data-filter="security">Security</button>
+            <button class="btn btn-outline-secondary btn-sm project-filter" data-filter="dev">Dev</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-3" id="projectsGrid">
+        <div class="col-md-6 col-lg-4 project-item" data-category="support" data-aos="fade-up">
+          <div class="project-card h-100">
+            <div class="project-top">
+              <div class="project-badge">Support</div>
+              <div class="project-icon"><i class="bi bi-tools"></i></div>
+            </div>
+            <h3 class="h5">IT Labs Troubleshooting</h3>
+            <p class="text-muted">Real-time support during C/SQL sessions: account issues, environment setup, fixes.</p>
+            <div class="project-meta">
+              <span class="chip">Windows</span><span class="chip">Linux</span><span class="chip">Documentation</span>
+            </div>
+            <div class="project-links">
+              <a class="link" href="#" target="_blank" rel="noreferrer"><i class="bi bi-github me-1"></i>GitHub</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer"><i class="bi bi-box-arrow-up-right me-1"></i>Details</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-category="dev" data-aos="fade-up" data-aos-delay="50">
+          <div class="project-card h-100">
+            <div class="project-top">
+              <div class="project-badge">Dev</div>
+              <div class="project-icon"><i class="bi bi-code-slash"></i></div>
+            </div>
+            <h3 class="h5">Web App (PayPal + Email)</h3>
+            <p class="text-muted">Built and maintained a web app integrating payments and automated confirmations.</p>
+            <div class="project-meta">
+              <span class="chip">PHP</span><span class="chip">SQL</span><span class="chip">Automation</span>
+            </div>
+            <div class="project-links">
+              <a class="link" href="#" target="_blank" rel="noreferrer"><i class="bi bi-github me-1"></i>GitHub</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer"><i class="bi bi-box-arrow-up-right me-1"></i>Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item" data-category="security" data-aos="fade-up" data-aos-delay="100">
+          <div class="project-card h-100">
+            <div class="project-top">
+              <div class="project-badge">Security</div>
+              <div class="project-icon"><i class="bi bi-shield-lock"></i></div>
+            </div>
+            <h3 class="h5">RangeForce Labs Notes</h3>
+            <p class="text-muted">Curated lab notes & checklists: detection basics, IR flow, safe operations.</p>
+            <div class="project-meta">
+              <span class="chip">Wireshark</span><span class="chip">Nmap</span><span class="chip">IR</span>
+            </div>
+            <div class="project-links">
+              <a class="link" href="#" target="_blank" rel="noreferrer"><i class="bi bi-file-earmark-text me-1"></i>Write-up</a>
+              <a class="link" href="#" target="_blank" rel="noreferrer"><i class="bi bi-box-arrow-up-right me-1"></i>Proof</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" class="section section-alt">
+    <div class="container">
+      <div class="row align-items-end g-3 mb-4">
+        <div class="col-lg-7" data-aos="fade-up">
+          <div class="section-kicker">Testimonials</div>
+          <h2 class="section-title">People I’ve supported</h2>
+          <p class="text-muted mb-0">Keep 2–4 short quotes. Use real names only if allowed.</p>
+        </div>
+      </div>
+
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="quote-card">
+              <div class="quote-mark">“</div>
+              <p class="mb-3">Fast, patient, and always explains the issue clearly. Our lab sessions ran smoothly.</p>
+              <div class="d-flex align-items-center gap-2">
+                <div class="mini-avatar"></div>
+                <div>
+                  <div class="fw-semibold">Lecturer / Staff</div>
+                  <div class="text-muted small">Academic Environment</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="quote-card">
+              <div class="quote-mark">“</div>
+              <p class="mb-3">Great troubleshooting. Solved login and network problems quickly and documented fixes.</p>
+              <div class="d-flex align-items-center gap-2">
+                <div class="mini-avatar"></div>
+                <div>
+                  <div class="fw-semibold">IT Team Member</div>
+                  <div class="text-muted small">Support & Operations</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <div class="quote-card">
+              <div class="quote-mark">“</div>
+              <p class="mb-3">Very professional and supportive. Helped our students debug projects under pressure.</p>
+              <div class="d-flex align-items-center gap-2">
+                <div class="mini-avatar"></div>
+                <div>
+                  <div class="fw-semibold">Student / Client</div>
+                  <div class="text-muted small">Project Support</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between mt-3">
+          <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <i class="bi bi-arrow-left"></i> Prev
+          </button>
+          <button class="btn btn-outline-secondary btn-sm" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            Next <i class="bi bi-arrow-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BLOG -->
+  <section id="blog" class="section">
+    <div class="container">
+      <div class="row align-items-end g-3 mb-4">
+        <div class="col-lg-7" data-aos="fade-up">
+          <div class="section-kicker">Blog</div>
+          <h2 class="section-title">Short write-ups</h2>
+          <p class="text-muted mb-0">Add 3–6 posts. Keep them short and practical.</p>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-4" data-aos="fade-up">
+          <div class="blog-card h-100">
+            <div class="blog-top">
+              <span class="blog-tag">Troubleshooting</span>
+              <span class="blog-date">2025</span>
+            </div>
+            <h3 class="h5">How I troubleshoot “No Internet” in 5 minutes</h3>
+            <p class="text-muted">A simple checklist: DNS/DHCP, adapter state, gateway, VPN conflicts.</p>
+            <a class="link" href="#" target="_blank" rel="noreferrer">Read more <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="50">
+          <div class="blog-card h-100">
+            <div class="blog-top">
+              <span class="blog-tag">Security</span>
+              <span class="blog-date">2025</span>
+            </div>
+            <h3 class="h5">What RangeForce taught me about incident flow</h3>
+            <p class="text-muted">A beginner-friendly explanation of detection → triage → containment → recovery.</p>
+            <a class="link" href="#" target="_blank" rel="noreferrer">Read more <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="blog-card h-100">
+            <div class="blog-top">
+              <span class="blog-tag">Career</span>
+              <span class="blog-date">2025</span>
+            </div>
+            <h3 class="h5">From IT Support to Cyber: my roadmap</h3>
+            <p class="text-muted">Skills to build, projects to show, and how to talk about impact.</p>
+            <a class="link" href="#" target="_blank" rel="noreferrer">Read more <i class="bi bi-arrow-up-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="row align-items-stretch g-3">
+        <div class="col-lg-5" data-aos="fade-up">
+          <div class="section-kicker">Contact</div>
+          <h2 class="section-title">Let’s work together</h2>
+          <p class="text-muted">Send a quick message. This form opens your email app (no backend needed).</p>
+
+          <div class="contact-card">
+            <div class="contact-item">
+              <i class="bi bi-envelope"></i>
+              <div>
+                <div class="fw-semibold">Email</div>
+                <a class="link" href="mailto:shishirbhattarai033@gmail.com">shishirbhattarai033@gmail.com</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="bi bi-telephone"></i>
+              <div>
+                <div class="fw-semibold">Phone</div>
+                <div class="text-muted">+61 433 654 404</div>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <i class="bi bi-linkedin"></i>
+              <div>
+                <div class="fw-semibold">LinkedIn</div>
+                <a class="link" href="https://linkedin.com/in/shishir-bhattarai-471aa319b/" target="_blank" rel="noreferrer">
+                  linkedin.com/in/shishir-bhattarai-471aa319b/
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left">
+          <form id="contactForm" class="glass-card p-4 h-100">
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">Your name</label>
+                <input class="form-control" name="name" placeholder="Your name" required>
+              </div>
+              <div class="col-md-6">
+                <label class="form-label">Your email</label>
+                <input class="form-control" name="email" type="email" placeholder="name@email.com" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Subject</label>
+                <input class="form-control" name="subject" placeholder="IT Support role / project / enquiry" required>
+              </div>
+              <div class="col-12">
+                <label class="form-label">Message</label>
+                <textarea class="form-control" name="message" rows="6" placeholder="Write your message..." required></textarea>
+              </div>
+              <div class="col-12 d-flex flex-wrap gap-2">
+                <button class="btn btn-brand" type="submit">
+                  <i class="bi bi-send me-2"></i>Send Message
+                </button>
+                <button class="btn btn-outline-secondary" type="button" id="fillDemoBtn">
+                  <i class="bi bi-magic me-2"></i>Fill Demo Text
+                </button>
+                <div id="formStatus" class="ms-auto small text-muted align-self-center"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <footer class="footer mt-5 pt-4">
+        <div class="d-flex flex-column flex-md-row justify-content-between gap-2">
+          <div class="text-muted small">© <span id="year"></span> Shishir Bhattarai • IT portfolio</div>
+      </footer>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
